@@ -1,0 +1,14 @@
+{
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/hooks/statusline_kontext.sh"
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      { "hooks": [ { "type": "command", "command": "python3 ~/.claude/hooks/kontext_ampel.py" } ] }
+    ],
+    "PreToolUse": [
+      { "matcher": "ExitPlanMode", "hooks": [ { "type": "command", "command": "python3 ~/.claude/hooks/plan_etappen_gate.py" } ] }
+    ]
+  }
+}
