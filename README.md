@@ -23,7 +23,7 @@ Eine gemessene Session lief bis `preTokens: 1.000.513`, dann griff die Auto-Komp
 Voraussetzungen: `python3`, `jq`.
 
 ```bash
-git clone https://github.com/milanjanke-oss/claude-code-skills.git
+git clone https://github.com/milanjanke/claude-code-skills.git
 cd claude-code-skills
 mkdir -p ~/.claude/skills ~/.claude/hooks
 cp -R skills/* ~/.claude/skills/
@@ -50,4 +50,4 @@ printf '%s' '{"tool_name":"ExitPlanMode","session_id":"rauchtest-'$RANDOM'","too
 
 ## Lizenz
 
-MIT · [Milan Janke](https://github.com/milanjanke-oss) · [DLMJ](https://dlmj.de)
+MIT · [Milan Janke](https://github.com/milanjanke) · [DLMJ](https://dlmj.de)
